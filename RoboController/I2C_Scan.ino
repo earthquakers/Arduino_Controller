@@ -1,7 +1,3 @@
-/**
- * Het address is 8
- */
- 
 #include <Wire.h>
 #include <stdint.h>
 
@@ -33,13 +29,3 @@ void scan() {
   delay(10);
 }
 
-void setup() {
-  Serial.begin(9600);
-  Wire.begin();  
-}
-
-void loop() {
-  scan();
-
-  delay(1000);
-}
